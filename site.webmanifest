@@ -1,0 +1,13 @@
+{
+  "name": "Wirbel.mov",
+  "short_name": "Wirbel.mov",
+  "description": "Edições que prendem o público.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#14121D",
+  "theme_color": "#14121D",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
