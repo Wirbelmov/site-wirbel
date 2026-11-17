@@ -1,0 +1,93 @@
+# Atualiza as views do portfólio a cada hora e publica o site no GitHub Pages.
+# Precisa de: um segredo YT_API_KEY (chave grátis da YouTube Data API v3) e
+# Settings → Pages → Source = "GitHub Actions".
+name: Atualizar views e publicar
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "7 * * * *"   # todo minuto 7 de cada hora (o GitHub pode atrasar alguns minutos)
+  workflow_dispatch:       # botão "Run workflow" para rodar na hora
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Buscar views no YouTube
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, urllib.parse, urllib.request
+
+          key = os.environ.get("YT_API_KEY")
+          if not key:
+              print("::warning::Segredo YT_API_KEY não configurado; as views não foram atualizadas.")
+              raise SystemExit(0)
+
+          with open("projects.json", encoding="utf-8") as f:
+              d = json.load(f)
+          ids = [p["id"] for p in d["projects"] if "youtu" in p.get("url", "")]
+          url = "https://www.googleapis.com/youtube/v3/videos?" + urllib.parse.urlencode(
+              {"part": "statistics", "id": ",".join(ids), "key": key})
+          try:
+              with urllib.request.urlopen(url, timeout=30) as r:
+                  data = json.load(r)
+          except Exception as e:
+              print(f"::warning::O YouTube não respondeu ({e}); o site segue com os números anteriores.")
+              raise SystemExit(0)
+
+          views = {i["id"]: int(i["statistics"].get("viewCount", 0)) for i in data.get("items", [])}
+          fmt = {
+              "facts": lambda v: f"{round(v / 1000)} mil views" if v >= 1000 else f"{v} views",
+              "facts_en": lambda v: f"{round(v / 1000)}K views" if v >= 1000 else f"{v} views",
+              "facts_es": lambda v: f"{round(v / 1000)} mil vistas" if v >= 1000 else f"{v} vistas",
+          }
+          for p in d["projects"]:
+              v = views.get(p["id"])
+              if v is None:
+                  print(f"::warning::Vídeo {p['id']} não encontrado no YouTube; mantido o número anterior.")
+                  continue
+              p["views"] = v
+              for k, f in fmt.items():
+                  if isinstance(p.get(k), list) and len(p[k]) > 1:
+                      p[k][1] = f(v)
+          d["views"] = sum(p.get("views", 0) for p in d["projects"])
+
+          with open("projects.json", "w", encoding="utf-8") as f:
+              f.write(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
+          print(f"Total de views: {d['views']}")
+          EOF
+
+      - name: Salvar no repositório se mudou
+        run: |
+          if ! git diff --quiet -- projects.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Atualiza views" -- projects.json
+            git push
+          else
+            echo "Views iguais às anteriores; nada a salvar."
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
