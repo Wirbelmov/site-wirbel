@@ -32,58 +32,68 @@ CATS = {
 # <head> of each translated page: Portuguese text -> translation (each must appear exactly once)
 HEAD = {
     "en": {
-        '<html lang="pt-BR">': '<html lang="en">',
-        "<title>Wirbel.mov · Editor de vídeo para YouTube, Shorts e motion graphics</title>":
-            "<title>Wirbel.mov · Video editor for YouTube, Shorts and motion graphics</title>",
-        '<meta name="description" content="Wirbel.mov, editor de vídeo e motion designer: vídeos longos para YouTube, canais dark, anime, games e finanças, Shorts e motion graphics. Veja o portfólio.">':
-            '<meta name="description" content="Wirbel.mov, video editor and motion designer: long-form YouTube videos, faceless channels, anime, gaming and finance, Shorts and motion graphics. See the portfolio.">',
-        '<link rel="canonical" href="https://wirbelmov.com/">': '<link rel="canonical" href="https://wirbelmov.com/en/">',
+        '<html lang="pt-BR">':
+            '<html lang="en">',
+        '<link rel="canonical" href="https://wirbelmov.com/">':
+            '<link rel="canonical" href="https://wirbelmov.com/en/">',
+        '<meta property="og:url" content="https://wirbelmov.com/">':
+            '<meta property="og:url" content="https://wirbelmov.com/en/">',
         '<meta property="og:locale" content="pt_BR">\n<meta property="og:locale:alternate" content="en_US">':
             '<meta property="og:locale" content="en_US">\n<meta property="og:locale:alternate" content="pt_BR">',
-        '<meta property="og:url" content="https://wirbelmov.com/">': '<meta property="og:url" content="https://wirbelmov.com/en/">',
-        '<meta property="og:title" content="Wirbel.mov | Editor de vídeo">': '<meta property="og:title" content="Wirbel.mov | Video editor">',
-        '<meta name="twitter:title" content="Wirbel.mov | Editor de vídeo">': '<meta name="twitter:title" content="Wirbel.mov | Video editor">',
-        '<meta property="og:description" content="Edições que prendem o público. Vídeos longos para YouTube, Shorts, motion graphics, cor e som.">':
-            '<meta property="og:description" content="Edits that hook the audience. Long-form YouTube videos, Shorts, motion graphics, color and sound.">',
-        '<meta name="twitter:description" content="Edições que prendem o público. Vídeos longos para YouTube, Shorts, motion graphics, cor e som.">':
-            '<meta name="twitter:description" content="Edits that hook the audience. Long-form YouTube videos, Shorts, motion graphics, color and sound.">',
-        'alt="Avatar do Wirbel: personagem de cabelo prateado, gola de pelo escuro e um cajado no ombro"':
-            'alt="Wirbel’s avatar: a silver-haired character with a dark fur collar and a staff on his shoulder"',
+        '<title>Wirbel · Editor de vídeo freelancer para YouTube e Shorts</title>':
+            '<title>Wirbel · Freelance video editor for YouTube and Shorts</title>',
+        '<meta name="description" content="Wirbel (Wirbel.mov) é editor de vídeo freelancer e motion designer: edição de vídeos longos para YouTube, canais dark, anime, games e finanças, Shorts e motion graphics.">':
+            '<meta name="description" content="Wirbel (Wirbel.mov) is a freelance video editor and motion designer: long-form YouTube video editing, faceless channels, anime, gaming and finance, Shorts and motion graphics.">',
+        '<meta property="og:title" content="Wirbel | Editor de vídeo">':
+            '<meta property="og:title" content="Wirbel | Video editor">',
+        '<meta name="twitter:title" content="Wirbel | Editor de vídeo">':
+            '<meta name="twitter:title" content="Wirbel | Video editor">',
+        '<meta property="og:description" content="Wirbel, editor de vídeo: edições que prendem o público. Vídeos longos para YouTube, Shorts, motion graphics, cor e som.">':
+            '<meta property="og:description" content="Wirbel, video editor: edits that hook the audience. Long-form YouTube videos, Shorts, motion graphics, color and sound.">',
+        '<meta name="twitter:description" content="Wirbel, editor de vídeo: edições que prendem o público. Vídeos longos para YouTube, Shorts, motion graphics, cor e som.">':
+            '<meta name="twitter:description" content="Wirbel, video editor: edits that hook the audience. Long-form YouTube videos, Shorts, motion graphics, color and sound.">',
+        'alt="Avatar do Wirbel, editor de vídeo: personagem de cabelo prateado, gola de pelo escuro e um cajado no ombro"':
+            'alt="Avatar of Wirbel, video editor: a silver-haired character with a dark fur collar and a staff on his shoulder"',
     },
     "es": {
-        '<html lang="pt-BR">': '<html lang="es">',
-        "<title>Wirbel.mov · Editor de vídeo para YouTube, Shorts e motion graphics</title>":
-            "<title>Wirbel.mov · Editor de video para YouTube, Shorts y motion graphics</title>",
-        '<meta name="description" content="Wirbel.mov, editor de vídeo e motion designer: vídeos longos para YouTube, canais dark, anime, games e finanças, Shorts e motion graphics. Veja o portfólio.">':
-            '<meta name="description" content="Wirbel.mov, editor de video y motion designer: videos largos para YouTube, canales dark, anime, videojuegos y finanzas, Shorts y motion graphics. Mira el portafolio.">',
-        '<link rel="canonical" href="https://wirbelmov.com/">': '<link rel="canonical" href="https://wirbelmov.com/es/">',
+        '<html lang="pt-BR">':
+            '<html lang="es">',
+        '<link rel="canonical" href="https://wirbelmov.com/">':
+            '<link rel="canonical" href="https://wirbelmov.com/es/">',
+        '<meta property="og:url" content="https://wirbelmov.com/">':
+            '<meta property="og:url" content="https://wirbelmov.com/es/">',
         '<meta property="og:locale" content="pt_BR">\n<meta property="og:locale:alternate" content="en_US">\n<meta property="og:locale:alternate" content="es_ES">':
             '<meta property="og:locale" content="es_ES">\n<meta property="og:locale:alternate" content="pt_BR">\n<meta property="og:locale:alternate" content="en_US">',
-        '<meta property="og:url" content="https://wirbelmov.com/">': '<meta property="og:url" content="https://wirbelmov.com/es/">',
-        '<meta property="og:title" content="Wirbel.mov | Editor de vídeo">': '<meta property="og:title" content="Wirbel.mov | Editor de video">',
-        '<meta name="twitter:title" content="Wirbel.mov | Editor de vídeo">': '<meta name="twitter:title" content="Wirbel.mov | Editor de video">',
-        '<meta property="og:description" content="Edições que prendem o público. Vídeos longos para YouTube, Shorts, motion graphics, cor e som.">':
-            '<meta property="og:description" content="Ediciones que atrapan al público. Videos largos para YouTube, Shorts, motion graphics, color y sonido.">',
-        '<meta name="twitter:description" content="Edições que prendem o público. Vídeos longos para YouTube, Shorts, motion graphics, cor e som.">':
-            '<meta name="twitter:description" content="Ediciones que atrapan al público. Videos largos para YouTube, Shorts, motion graphics, color y sonido.">',
-        'alt="Avatar do Wirbel: personagem de cabelo prateado, gola de pelo escuro e um cajado no ombro"':
-            'alt="Avatar de Wirbel: personaje de cabello plateado, cuello de piel oscura y un bastón al hombro"',
+        '<title>Wirbel · Editor de vídeo freelancer para YouTube e Shorts</title>':
+            '<title>Wirbel · Editor de video freelance para YouTube y Shorts</title>',
+        '<meta name="description" content="Wirbel (Wirbel.mov) é editor de vídeo freelancer e motion designer: edição de vídeos longos para YouTube, canais dark, anime, games e finanças, Shorts e motion graphics.">':
+            '<meta name="description" content="Wirbel (Wirbel.mov) es editor de video freelance y motion designer: edición de videos largos para YouTube, canales dark, anime, videojuegos y finanzas, Shorts y motion graphics.">',
+        '<meta property="og:title" content="Wirbel | Editor de vídeo">':
+            '<meta property="og:title" content="Wirbel | Editor de video">',
+        '<meta name="twitter:title" content="Wirbel | Editor de vídeo">':
+            '<meta name="twitter:title" content="Wirbel | Editor de video">',
+        '<meta property="og:description" content="Wirbel, editor de vídeo: edições que prendem o público. Vídeos longos para YouTube, Shorts, motion graphics, cor e som.">':
+            '<meta property="og:description" content="Wirbel, editor de video: ediciones que atrapan al público. Videos largos para YouTube, Shorts, motion graphics, color y sonido.">',
+        '<meta name="twitter:description" content="Wirbel, editor de vídeo: edições que prendem o público. Vídeos longos para YouTube, Shorts, motion graphics, cor e som.">':
+            '<meta name="twitter:description" content="Wirbel, editor de video: ediciones que atrapan al público. Videos largos para YouTube, Shorts, motion graphics, color y sonido.">',
+        'alt="Avatar do Wirbel, editor de vídeo: personagem de cabelo prateado, gola de pelo escuro e um cajado no ombro"':
+            'alt="Avatar de Wirbel, editor de video: personaje de cabello plateado, cuello de piel oscura y un bastón al hombro"',
     },
 }
 
 PERSON = {
-    "pt": ("Editor de vídeo e motion designer",
-           "Editor de vídeo para YouTube: vídeos longos narrados, canais dark, anime, games e finanças, Shorts e motion graphics.",
+    "pt": ("Editor de vídeo freelancer e motion designer",
+           "Wirbel é editor de vídeo freelancer: edição de vídeos longos narrados para YouTube, canais dark, anime, games e finanças, Shorts e motion graphics.",
            ["Edição de vídeos longos para YouTube", "Edição de Shorts e Reels", "Motion graphics para YouTube", "Cor e som para vídeo"],
-           "Edição de vídeo", "Wirbel.mov · Editor de vídeo"),
-    "en": ("Video editor and motion designer",
-           "Video editor for YouTube: long narrated videos, faceless channels, anime, gaming and finance, Shorts and motion graphics.",
+           "Edição de vídeo", "Wirbel · Editor de vídeo"),
+    "en": ("Freelance video editor and motion designer",
+           "Wirbel is a freelance video editor: long narrated YouTube videos, faceless channels, anime, gaming and finance, Shorts and motion graphics.",
            ["Long-form YouTube video editing", "Shorts and Reels editing", "Motion graphics for YouTube", "Color and sound for video"],
-           "Video editing", "Wirbel.mov · Video editor"),
-    "es": ("Editor de video y motion designer",
-           "Editor de video para YouTube: videos largos narrados, canales dark, anime, videojuegos y finanzas, Shorts y motion graphics.",
+           "Video editing", "Wirbel · Video editor"),
+    "es": ("Editor de video freelance y motion designer",
+           "Wirbel es editor de video freelance: edición de videos largos narrados para YouTube, canales dark, anime, videojuegos y finanzas, Shorts y motion graphics.",
            ["Edición de videos largos para YouTube", "Edición de Shorts y Reels", "Motion graphics para YouTube", "Color y sonido para video"],
-           "Edición de video", "Wirbel.mov · Editor de video"),
+           "Edición de video", "Wirbel · Editor de video"),
 }
 INLANG = {"pt": "pt-BR", "en": "en", "es": "es"}
 
@@ -131,11 +141,15 @@ def jsonld(d, lang):
     job, desc, offers, stype, page_name = PERSON[lang]
     url = SITE + PATH[lang]
     person = {
-        "@type": "Person", "@id": f"{SITE}/#wirbel", "name": "Wirbel.mov",
-        "alternateName": ["Wirbel", "wirbelmov"], "jobTitle": job, "description": desc,
+        "@type": "Person", "@id": f"{SITE}/#wirbel", "name": "Wirbel",
+        "alternateName": ["Wirbel.mov", "wirbelmov", "Wirbel Mov"], "jobTitle": job, "description": desc,
         "url": f"{SITE}/", "image": f"{SITE}/assets/icon-512.png",
-        "knowsAbout": ["Video editing", "Edição de vídeo", "Edición de video", "YouTube", "Motion graphics",
-                       "Shorts", "Color grading", "Audio mixing", "Adobe Premiere Pro", "Adobe After Effects"],
+        # the same skills named the way people search for them in each language
+        "knowsAbout": ["Edição de vídeo", "Editor de vídeo para YouTube", "Edição de vídeo freelancer",
+                       "Video editing", "YouTube video editor", "Freelance video editing",
+                       "Edición de video", "Editor de video para YouTube", "Edición de video freelance",
+                       "Motion graphics", "Shorts", "Reels", "Canais dark", "Faceless YouTube channels",
+                       "Canales dark", "Color grading", "Audio mixing", "Adobe Premiere Pro", "Adobe After Effects"],
         "knowsLanguage": ["pt-BR", "en", "es"],
         "sameAs": [s["url"] for s in (d.get("contact") or {}).get("socials", []) if s.get("url")],
         "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": n, "serviceType": stype}}
@@ -156,7 +170,7 @@ def jsonld(d, lang):
             v["duration"] = iso_duration(p.get("dur"))
         videos.append(v)
     graph = [
-        {"@type": "WebSite", "@id": f"{SITE}/#site", "url": f"{SITE}/", "name": "Wirbel.mov",
+        {"@type": "WebSite", "@id": f"{SITE}/#site", "url": f"{SITE}/", "name": "Wirbel.mov", "alternateName": "Wirbel",
          "inLanguage": ["pt-BR", "en", "es"], "publisher": {"@id": f"{SITE}/#wirbel"}},
         {"@type": "ProfilePage", "@id": f"{url}#page", "url": url, "name": page_name, "inLanguage": INLANG[lang],
          "mainEntity": {"@id": f"{SITE}/#wirbel"}, "isPartOf": {"@id": f"{SITE}/#site"}},
