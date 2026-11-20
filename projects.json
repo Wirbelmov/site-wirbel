@@ -51,7 +51,8 @@
         "28 mil vistas",
         "16:9"
       ],
-      "featured": true
+      "featured": true,
+      "date": "2026-10-14"
     },
     {
       "id": "X0qwdedtP48",
@@ -83,7 +84,8 @@
         "29 mil vistas",
         "16:9"
       ],
-      "featured": true
+      "featured": true,
+      "date": "2026-11-13"
     },
     {
       "id": "T2SBPTUeHlg",
@@ -115,7 +117,8 @@
         "79 mil vistas",
         "16:9"
       ],
-      "featured": false
+      "featured": false,
+      "date": "2026-10-02"
     },
     {
       "id": "c1QODuMIIEc",
@@ -147,7 +150,8 @@
         "85 mil vistas",
         "16:9"
       ],
-      "featured": false
+      "featured": false,
+      "date": "2026-11-06"
     },
     {
       "id": "BqtHixWTPLQ",
@@ -179,7 +183,8 @@
         "57 mil vistas",
         "16:9"
       ],
-      "featured": false
+      "featured": false,
+      "date": "2026-09-18"
     },
     {
       "id": "u1Owq3SGGm8",
@@ -211,7 +216,8 @@
         "41 mil vistas",
         "16:9"
       ],
-      "featured": false
+      "featured": false,
+      "date": "2026-10-16"
     },
     {
       "id": "q8QjTZrLpI8",
@@ -243,7 +249,8 @@
         "18 mil vistas",
         "16:9"
       ],
-      "featured": false
+      "featured": false,
+      "date": "2026-10-09"
     },
     {
       "id": "qNXUO8V0gqE",
@@ -275,7 +282,8 @@
         "14 mil vistas",
         "16:9"
       ],
-      "featured": false
+      "featured": false,
+      "date": "2026-09-23"
     },
     {
       "id": "hgTxZBowHmQ",
@@ -307,7 +315,8 @@
         "12 mil vistas",
         "16:9"
       ],
-      "featured": false
+      "featured": false,
+      "date": "2026-10-07"
     },
     {
       "id": "XHLX5EaImAQ",
@@ -339,7 +348,8 @@
         "6 mil vistas",
         "16:9"
       ],
-      "featured": false
+      "featured": false,
+      "date": "2026-11-04"
     }
   ]
 }

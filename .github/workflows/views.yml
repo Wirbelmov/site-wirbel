@@ -74,12 +74,16 @@ jobs:
           print(f"Total de views: {d['views']}")
           EOF
 
+      - name: Escrever os trabalhos e a ficha profissional no HTML, nos 3 idiomas (SEO)
+        run: python3 tools/prerender.py
+
       - name: Salvar no repositório se mudou
         run: |
-          if ! git diff --quiet -- projects.json; then
+          if [ -n "$(git status --porcelain -- projects.json index.html en es sitemap.xml)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Atualiza views" -- projects.json
+            git add projects.json index.html en es sitemap.xml
+            git commit -m "Atualiza views"
             git push
           else
             echo "Views iguais às anteriores; nada a salvar."

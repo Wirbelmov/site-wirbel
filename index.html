@@ -3,15 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Wirbel.mov</title>
+<title>Wirbel.mov · Editor de vídeo para YouTube, Shorts e motion graphics</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Edições que prendem o público. Vídeos longos para YouTube, Shorts, motion graphics, cor e som.">
+<meta name="description" content="Wirbel.mov, editor de vídeo e motion designer: vídeos longos para YouTube, canais dark, anime, games e finanças, Shorts e motion graphics. Veja o portfólio.">
 <meta name="theme-color" content="#14121D">
 <link rel="canonical" href="https://wirbelmov.com/">
+<link rel="alternate" hreflang="pt" href="https://wirbelmov.com/">
+<link rel="alternate" hreflang="en" href="https://wirbelmov.com/en/">
+<link rel="alternate" hreflang="es" href="https://wirbelmov.com/es/">
+<link rel="alternate" hreflang="x-default" href="https://wirbelmov.com/">
 <!-- link preview (WhatsApp, Discord, X, Instagram, LinkedIn) -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Wirbel.mov">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
 <meta property="og:url" content="https://wirbelmov.com/">
 <meta property="og:title" content="Wirbel.mov | Editor de vídeo">
 <meta property="og:description" content="Edições que prendem o público. Vídeos longos para YouTube, Shorts, motion graphics, cor e som.">
@@ -116,6 +122,10 @@ nav.hov .nav-pill{opacity:1}
 h1{font-size:clamp(32px,5vw,84px);font-weight:900;max-width:100%}
 @supports (font-size:1cqi){h1{font-size:clamp(30px,10.4cqi,124px)}}
 h1 .ln{white-space:nowrap}
+h1 .eyebrow{display:table;margin:0 0 22px;line-height:1.4;white-space:nowrap}
+.about{display:flex;flex-direction:column;align-items:flex-start;gap:10px;max-width:74ch;margin:0 0 56px}
+.about .sub{margin:0}
+.about p{margin:0;font-size:17px}
 h1 .ln{display:block}
 h1 .ln>span{display:inline-block}
 h1 .out{color:var(--paper);-webkit-text-stroke:2.5px var(--ink);paint-order:stroke fill;text-shadow:5px 5px 0 var(--ink)}
@@ -301,6 +311,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
 .plink:hover{transform:translateY(-2px);background:var(--dim-fg)}
 .plink:focus-visible{outline:3px solid var(--dim-fg);outline-offset:3px}
 @media (max-width:760px){.pbody{flex-direction:column;align-items:stretch}.plink{justify-content:center}.close{top:-12px;right:-6px;width:36px;height:36px}}
+.langbar{background:var(--accent);color:var(--on-accent);font-size:14px;font-weight:700}
+.langbar .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-block:8px}
+.langbar a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.langbar button{margin-left:auto;all:unset;cursor:pointer;padding:2px 8px;border-radius:6px;margin-left:auto}
+.langbar button:focus-visible{outline:2px solid var(--on-accent)}
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,24px);opacity:0;visibility:hidden;background:var(--ink);color:var(--paper);font-weight:700;padding:10px 18px;border-radius:999px;transition:transform .4s var(--spring),opacity .25s,visibility 0s .4s;z-index:60}
 .toast.show{transform:translate(-50%,0);opacity:1;visibility:visible;transition:transform .4s var(--spring),opacity .25s,visibility 0s}
 
@@ -310,8 +325,252 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
 }
 </style>
 
+<!--PRERENDER:jsonld--><script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://wirbelmov.com/#site",
+   "url": "https://wirbelmov.com/",
+   "name": "Wirbel.mov",
+   "inLanguage": [
+    "pt-BR",
+    "en",
+    "es"
+   ],
+   "publisher": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   }
+  },
+  {
+   "@type": "ProfilePage",
+   "@id": "https://wirbelmov.com/#page",
+   "url": "https://wirbelmov.com/",
+   "name": "Wirbel.mov · Editor de vídeo",
+   "inLanguage": "pt-BR",
+   "mainEntity": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   },
+   "isPartOf": {
+    "@id": "https://wirbelmov.com/#site"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://wirbelmov.com/#wirbel",
+   "name": "Wirbel.mov",
+   "alternateName": [
+    "Wirbel",
+    "wirbelmov"
+   ],
+   "jobTitle": "Editor de vídeo e motion designer",
+   "description": "Editor de vídeo para YouTube: vídeos longos narrados, canais dark, anime, games e finanças, Shorts e motion graphics.",
+   "url": "https://wirbelmov.com/",
+   "image": "https://wirbelmov.com/assets/icon-512.png",
+   "knowsAbout": [
+    "Video editing",
+    "Edição de vídeo",
+    "Edición de video",
+    "YouTube",
+    "Motion graphics",
+    "Shorts",
+    "Color grading",
+    "Audio mixing",
+    "Adobe Premiere Pro",
+    "Adobe After Effects"
+   ],
+   "knowsLanguage": [
+    "pt-BR",
+    "en",
+    "es"
+   ],
+   "sameAs": [
+    "https://x.com/Wirbel_Mov",
+    "https://www.instagram.com/wirbel_mov/",
+    "https://discord.com/users/1325070781943648330"
+   ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Edição de vídeos longos para YouTube",
+      "serviceType": "Edição de vídeo"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Edição de Shorts e Reels",
+      "serviceType": "Edição de vídeo"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Motion graphics para YouTube",
+      "serviceType": "Edição de vídeo"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Cor e som para vídeo",
+      "serviceType": "Edição de vídeo"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "VideoObject",
+   "name": "A Melhor Oportunidade no Mercado? Ou Uma Empresa Em Falência?",
+   "description": "Vídeo de finanças para o canal do Gonçalo Malheiro. Montagem, motion graphics de dados e trilha.",
+   "thumbnailUrl": "https://wirbelmov.com/assets/thumbs/RdMpIkEQ06I.webp",
+   "embedUrl": "https://www.youtube.com/embed/RdMpIkEQ06I",
+   "url": "https://www.youtube.com/watch?v=RdMpIkEQ06I",
+   "inLanguage": "pt-BR",
+   "contributor": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   },
+   "uploadDate": "2026-10-14",
+   "duration": "PT19M28S"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "TOBIAS era IMPARÁVEL? Como ASH fez o IMPOSSÍVEL em POKÉMON?",
+   "description": "Vídeo narrado de Pokémon para o Canal Filler. Montagem de cenas do anime e dos jogos sobre a narração, motion graphics, trilha e efeitos sonoros.",
+   "thumbnailUrl": "https://wirbelmov.com/assets/thumbs/X0qwdedtP48.webp",
+   "embedUrl": "https://www.youtube.com/embed/X0qwdedtP48",
+   "url": "https://www.youtube.com/watch?v=X0qwdedtP48",
+   "inLanguage": "pt-BR",
+   "contributor": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   },
+   "uploadDate": "2026-11-13",
+   "duration": "PT9M30S"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "Por que CYNTHIA sempre SERÁ um dos MAIORES DESAFIOS de POKÉMON?",
+   "description": "Vídeo narrado de Pokémon para o Canal Filler. Montagem de cenas do anime e dos jogos sobre a narração, motion graphics, trilha e efeitos sonoros.",
+   "thumbnailUrl": "https://wirbelmov.com/assets/thumbs/T2SBPTUeHlg.webp",
+   "embedUrl": "https://www.youtube.com/embed/T2SBPTUeHlg",
+   "url": "https://www.youtube.com/watch?v=T2SBPTUeHlg",
+   "inLanguage": "pt-BR",
+   "contributor": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   },
+   "uploadDate": "2026-10-02",
+   "duration": "PT11M18S"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "Por que NOTURNO e AÇO mudaram POKÉMON para SEMPRE?",
+   "description": "Vídeo narrado de Pokémon para o Canal Filler. Montagem de cenas do anime e dos jogos sobre a narração, motion graphics, trilha e efeitos sonoros.",
+   "thumbnailUrl": "https://wirbelmov.com/assets/thumbs/c1QODuMIIEc.webp",
+   "embedUrl": "https://www.youtube.com/embed/c1QODuMIIEc",
+   "url": "https://www.youtube.com/watch?v=c1QODuMIIEc",
+   "inLanguage": "pt-BR",
+   "contributor": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   },
+   "uploadDate": "2026-11-06",
+   "duration": "PT14M50S"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "Por que PAUL foi o RIVAL mais DIFÍCIL de ASH em POKÉMON?",
+   "description": "Vídeo narrado de Pokémon para o Canal Filler. Montagem de cenas do anime e dos jogos sobre a narração, motion graphics, trilha e efeitos sonoros.",
+   "thumbnailUrl": "https://wirbelmov.com/assets/thumbs/BqtHixWTPLQ.webp",
+   "embedUrl": "https://www.youtube.com/embed/BqtHixWTPLQ",
+   "url": "https://www.youtube.com/watch?v=BqtHixWTPLQ",
+   "inLanguage": "pt-BR",
+   "contributor": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   },
+   "uploadDate": "2026-09-18",
+   "duration": "PT12M25S"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "Como BROCK passou de \"MENTOR\" do ASH para um dos MAIORES ESPECIALISTAS de POKÉMON?",
+   "description": "Vídeo narrado de Pokémon para o Canal Filler. Montagem de cenas do anime e dos jogos sobre a narração, motion graphics, trilha e efeitos sonoros.",
+   "thumbnailUrl": "https://wirbelmov.com/assets/thumbs/u1Owq3SGGm8.webp",
+   "embedUrl": "https://www.youtube.com/embed/u1Owq3SGGm8",
+   "url": "https://www.youtube.com/watch?v=u1Owq3SGGm8",
+   "inLanguage": "pt-BR",
+   "contributor": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   },
+   "uploadDate": "2026-10-16",
+   "duration": "PT10M28S"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "ASH vs. ALAIN | Como a FINAL da LIGA KALOS definiu o FUTURO de POKÉMON?",
+   "description": "Vídeo narrado de Pokémon para o Canal Filler. Montagem de cenas do anime e dos jogos sobre a narração, motion graphics, trilha e efeitos sonoros.",
+   "thumbnailUrl": "https://wirbelmov.com/assets/thumbs/q8QjTZrLpI8.webp",
+   "embedUrl": "https://www.youtube.com/embed/q8QjTZrLpI8",
+   "url": "https://www.youtube.com/watch?v=q8QjTZrLpI8",
+   "inLanguage": "pt-BR",
+   "contributor": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   },
+   "uploadDate": "2026-10-09",
+   "duration": "PT13M28S"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "A Verdade Sobre A Reforma Em Portugal: Quanto Dinheiro É Suficiente?",
+   "description": "Vídeo de finanças para o canal do Gonçalo Malheiro. Montagem, motion graphics de dados e trilha.",
+   "thumbnailUrl": "https://wirbelmov.com/assets/thumbs/qNXUO8V0gqE.webp",
+   "embedUrl": "https://www.youtube.com/embed/qNXUO8V0gqE",
+   "url": "https://www.youtube.com/watch?v=qNXUO8V0gqE",
+   "inLanguage": "pt-BR",
+   "contributor": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   },
+   "uploadDate": "2026-09-23",
+   "duration": "PT20M57S"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "Investir Em Imobiliário Com Pouco Dinheiro Em Portugal (É Possível?)",
+   "description": "Vídeo de finanças para o canal do Gonçalo Malheiro. Montagem, motion graphics de dados e trilha.",
+   "thumbnailUrl": "https://wirbelmov.com/assets/thumbs/hgTxZBowHmQ.webp",
+   "embedUrl": "https://www.youtube.com/embed/hgTxZBowHmQ",
+   "url": "https://www.youtube.com/watch?v=hgTxZBowHmQ",
+   "inLanguage": "pt-BR",
+   "contributor": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   },
+   "uploadDate": "2026-10-07",
+   "duration": "PT17M59S"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "Gasolina Em Portugal vs Espanha: Quem Tem Razão?",
+   "description": "Vídeo de finanças para o canal do Gonçalo Malheiro. Montagem, motion graphics de dados e trilha.",
+   "thumbnailUrl": "https://wirbelmov.com/assets/thumbs/XHLX5EaImAQ.webp",
+   "embedUrl": "https://www.youtube.com/embed/XHLX5EaImAQ",
+   "url": "https://www.youtube.com/watch?v=XHLX5EaImAQ",
+   "inLanguage": "pt-BR",
+   "contributor": {
+    "@id": "https://wirbelmov.com/#wirbel"
+   },
+   "uploadDate": "2026-11-04",
+   "duration": "PT18M8S"
+  }
+ ]
+}
+</script><!--/PRERENDER:jsonld-->
 </head>
 <body>
+<div class="langbar" id="langBar" hidden></div>
 <header>
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Wirbel.mov, início">
@@ -331,14 +590,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <span class="eyebrow" data-en="▶ Video editor · Motion" data-es="▶ Editor de video · Motion">▶ Editor de vídeo · Motion</span>
         <h1>
+          <span class="eyebrow" data-en="▶ Video editor · Motion" data-es="▶ Editor de video · Motion">▶ Editor de vídeo · Motion</span>
           <span class="ln"><span data-en="Edits that" data-es="Ediciones que">Edições que</span></span>
           <span class="ln"><span class="out" data-en="hook" data-es="atrapan">prendem</span></span>
           <span class="ln"><span class="acc" data-en="the audience" data-es="al público">o público</span></span>
         </h1>
         <p class="lede" data-en="I’m Wirbel. I edit long-form YouTube videos, Shorts and motion graphics for channels that want to be watched to the very end. Editing, motion, color and sound in one package." data-es="Soy Wirbel. Edito videos largos para YouTube, Shorts y motion graphics para canales que quieren ser vistos hasta el final. Montaje, motion, color y sonido en un solo paquete.">Eu sou o Wirbel. Edito vídeos longos para YouTube, Shorts e motion graphics para canais que querem ser assistidos até o fim. Montagem, motion, cor e som num pacote só.</p>
-        <a class="founder" href="https://discord.gg/d7W5EKdkEQ" target="_blank" rel="noopener"><img src="assets/pixellab.webp" alt="" width="36" height="36"><span data-en="Founder of &lt;b&gt;Pixel Lab&lt;/b&gt;" data-es="Fundador de &lt;b&gt;Pixel Lab&lt;/b&gt;">Fundador da <b>Pixel Lab</b></span><span class="join" data-en="Join the Discord ↗" data-es="Entrar al Discord ↗">Entrar no Discord ↗</span></a>
+        <a class="founder" href="https://discord.gg/d7W5EKdkEQ" target="_blank" rel="noopener"><img src="/assets/pixellab.webp" alt="" width="36" height="36"><span data-en="Founder of &lt;b&gt;Pixel Lab&lt;/b&gt;" data-es="Fundador de &lt;b&gt;Pixel Lab&lt;/b&gt;">Fundador da <b>Pixel Lab</b></span><span class="join" data-en="Join the Discord ↗" data-es="Entrar al Discord ↗">Entrar no Discord ↗</span></a>
         <div class="ctas">
           <a class="btn" href="#trabalhos"><span data-en="See my work" data-es="Ver trabajos">Ver trabalhos</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn alt" href="#contato" data-en="Talk to me" data-es="Hablemos">Fale comigo</a>
@@ -351,7 +610,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
           <circle class="r3" cx="100" cy="100" r="80"/>
           <circle class="r4" cx="100" cy="100" r="73"/>
         </svg>
-        <div class="panel"><img src="assets/avatar.webp" alt="Avatar do Wirbel: personagem de cabelo prateado, gola de pelo escuro e um cajado no ombro"></div>
+        <div class="panel"><img src="/assets/avatar.webp" alt="Avatar do Wirbel: personagem de cabelo prateado, gola de pelo escuro e um cajado no ombro"></div>
         <span class="tag t1"><span class="rec" aria-hidden="true"></span>00:00:25:00</span>
         <span class="tag t2">25 fps · 1080p</span>
         <span class="tag t3">wirbel_final_v3.mov</span>
@@ -364,13 +623,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
       <div class="sec-head">
         <h2 data-en="Featured &lt;em&gt;work&lt;/em&gt;" data-es="Trabajos &lt;em&gt;destacados&lt;/em&gt;">Trabalhos em <em>destaque</em></h2>
       </div>
-      <div class="grid feat" id="featGrid"></div>
-      <div id="others" hidden>
+      <div class="grid feat" id="featGrid"><!--PRERENDER:feat--><button type="button" class="card"><div class="thumb"><img src="/assets/thumbs/RdMpIkEQ06I.webp" alt="A Melhor Oportunidade no Mercado? Ou Uma Empresa Em Falência?" loading="lazy"><span class="badge">Finanças</span><span class="dur">19:28</span></div><div class="meta"><h3>A Melhor Oportunidade no Mercado? Ou Uma Empresa Em Falência?</h3><p>Vídeo de finanças para o canal do Gonçalo Malheiro.</p></div></button><button type="button" class="card"><div class="thumb"><img src="/assets/thumbs/X0qwdedtP48.webp" alt="TOBIAS era IMPARÁVEL? Como ASH fez o IMPOSSÍVEL em POKÉMON?" loading="lazy"><span class="badge">Anime &amp; games</span><span class="dur">9:30</span></div><div class="meta"><h3>TOBIAS era IMPARÁVEL? Como ASH fez o IMPOSSÍVEL em POKÉMON?</h3><p>Vídeo narrado de Pokémon para o Canal Filler.</p></div></button><!--/PRERENDER:feat--></div>
+      <div id="others">
         <div class="others-head">
           <h3 class="sub" data-en="Other projects" data-es="Otros proyectos">Outros projetos</h3>
           <div class="chips" id="chips" role="group" aria-label="Filtrar projetos" hidden></div>
         </div>
-        <div class="grid more" id="grid"></div>
+        <div class="grid more" id="grid"><!--PRERENDER:rest--><button type="button" class="card"><div class="thumb"><img src="/assets/thumbs/T2SBPTUeHlg.webp" alt="Por que CYNTHIA sempre SERÁ um dos MAIORES DESAFIOS de POKÉMON?" loading="lazy"><span class="badge">Anime &amp; games</span><span class="dur">11:18</span></div><div class="meta"><h3>Por que CYNTHIA sempre SERÁ um dos MAIORES DESAFIOS de POKÉMON?</h3><p>Vídeo narrado de Pokémon para o Canal Filler.</p></div></button><button type="button" class="card"><div class="thumb"><img src="/assets/thumbs/c1QODuMIIEc.webp" alt="Por que NOTURNO e AÇO mudaram POKÉMON para SEMPRE?" loading="lazy"><span class="badge">Anime &amp; games</span><span class="dur">14:50</span></div><div class="meta"><h3>Por que NOTURNO e AÇO mudaram POKÉMON para SEMPRE?</h3><p>Vídeo narrado de Pokémon para o Canal Filler.</p></div></button><button type="button" class="card"><div class="thumb"><img src="/assets/thumbs/BqtHixWTPLQ.webp" alt="Por que PAUL foi o RIVAL mais DIFÍCIL de ASH em POKÉMON?" loading="lazy"><span class="badge">Anime &amp; games</span><span class="dur">12:25</span></div><div class="meta"><h3>Por que PAUL foi o RIVAL mais DIFÍCIL de ASH em POKÉMON?</h3><p>Vídeo narrado de Pokémon para o Canal Filler.</p></div></button><button type="button" class="card"><div class="thumb"><img src="/assets/thumbs/u1Owq3SGGm8.webp" alt="Como BROCK passou de &quot;MENTOR&quot; do ASH para um dos MAIORES ESPECIALISTAS de POKÉMON?" loading="lazy"><span class="badge">Anime &amp; games</span><span class="dur">10:28</span></div><div class="meta"><h3>Como BROCK passou de &quot;MENTOR&quot; do ASH para um dos MAIORES ESPECIALISTAS de POKÉMON?</h3><p>Vídeo narrado de Pokémon para o Canal Filler.</p></div></button><button type="button" class="card"><div class="thumb"><img src="/assets/thumbs/q8QjTZrLpI8.webp" alt="ASH vs. ALAIN | Como a FINAL da LIGA KALOS definiu o FUTURO de POKÉMON?" loading="lazy"><span class="badge">Anime &amp; games</span><span class="dur">13:28</span></div><div class="meta"><h3>ASH vs. ALAIN | Como a FINAL da LIGA KALOS definiu o FUTURO de POKÉMON?</h3><p>Vídeo narrado de Pokémon para o Canal Filler.</p></div></button><button type="button" class="card"><div class="thumb"><img src="/assets/thumbs/qNXUO8V0gqE.webp" alt="A Verdade Sobre A Reforma Em Portugal: Quanto Dinheiro É Suficiente?" loading="lazy"><span class="badge">Finanças</span><span class="dur">20:57</span></div><div class="meta"><h3>A Verdade Sobre A Reforma Em Portugal: Quanto Dinheiro É Suficiente?</h3><p>Vídeo de finanças para o canal do Gonçalo Malheiro.</p></div></button><button type="button" class="card"><div class="thumb"><img src="/assets/thumbs/hgTxZBowHmQ.webp" alt="Investir Em Imobiliário Com Pouco Dinheiro Em Portugal (É Possível?)" loading="lazy"><span class="badge">Finanças</span><span class="dur">17:59</span></div><div class="meta"><h3>Investir Em Imobiliário Com Pouco Dinheiro Em Portugal (É Possível?)</h3><p>Vídeo de finanças para o canal do Gonçalo Malheiro.</p></div></button><button type="button" class="card"><div class="thumb"><img src="/assets/thumbs/XHLX5EaImAQ.webp" alt="Gasolina Em Portugal vs Espanha: Quem Tem Razão?" loading="lazy"><span class="badge">Finanças</span><span class="dur">18:08</span></div><div class="meta"><h3>Gasolina Em Portugal vs Espanha: Quem Tem Razão?</h3><p>Vídeo de finanças para o canal do Gonçalo Malheiro.</p></div></button><!--/PRERENDER:rest--></div>
       </div>
     </div>
   </section>
@@ -391,6 +650,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
       <div class="sec-head">
         <h2 data-en="How I &lt;em&gt;work&lt;/em&gt;" data-es="Cómo &lt;em&gt;trabajo&lt;/em&gt;">Como eu <em>trabalho</em></h2>
         <p data-en="From raw footage to a file ready to upload. You send the voice-over or what you shot, I send back a video with rhythm." data-es="Del material en bruto al archivo listo para subir. Tú envías la narración o lo que grabaste, yo te devuelvo un video con ritmo.">Do material bruto ao arquivo pronto para subir. Você manda a narração ou o que gravou, eu devolvo um vídeo com ritmo.</p>
+      </div>
+      <div class="about">
+        <h3 class="sub" data-en="About me" data-es="Sobre mí">Sobre mim</h3>
+        <p data-en="I’m Wirbel, a video editor and motion designer. I work with YouTube channels that live on retention: long narrated videos, faceless channels, anime and games, finance. For Canal Filler I build Pokémon videos that cover every second of the narration with scenes from the anime and the games; for Gonçalo Malheiro’s channel I turn economic data into motion graphics. I also founded Pixel Lab." data-es="Soy Wirbel, editor de video y motion designer. Trabajo con canales de YouTube que viven de la retención: videos largos narrados, canales dark, anime y videojuegos, finanzas. Para Canal Filler monto videos de Pokémon que cubren cada segundo de la narración con escenas del anime y de los juegos; para el canal de Gonçalo Malheiro convierto datos de economía en motion graphics. También fundé Pixel Lab.">Sou o Wirbel, editor de vídeo e motion designer. Trabalho com canais do YouTube que vivem de retenção: vídeos longos narrados, canais dark, anime e games, finanças. No Canal Filler, monto vídeos de Pokémon cobrindo cada segundo da narração com cenas do anime e dos jogos; no canal do Gonçalo Malheiro, transformo dados de economia em motion graphics. Também sou fundador da Pixel Lab.</p>
       </div>
       <h3 class="sub" data-en="What I do" data-es="Lo que hago">O que eu faço</h3>
       <div class="svc">
@@ -482,7 +745,7 @@ const cat=c=>(CATS[c]||[c,c,c])[IDX[lang]];
 const isYT=u=>/youtu\.?be/i.test(String(u||''));
 
 function thumbHTML(p){
-  return (p.thumb?'<img src="'+esc(p.thumb)+'" alt="" loading="lazy">':'<div class="swirl"></div>')+
+  return (p.thumb?'<img src="/'+esc(String(p.thumb).replace(/^\//,''))+'" alt="'+esc(L(p,'title'))+'" loading="lazy">':'<div class="swirl"></div>')+
     '<span class="badge">'+esc(cat(p.cat))+'</span>'+(p.dur?'<span class="dur">'+esc(p.dur)+'</span>':'');
 }
 
@@ -570,7 +833,7 @@ function renderContact(){
   so.innerHTML=list.length?list.map(s=>s.url&&/^https:\/\//.test(s.url)
     ?'<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+nm(s)+' <span>'+esc(s.handle||'')+' ↗</span></a>'
     :'<button type="button" data-copy="'+esc(s.copy)+'" aria-label="'+esc(T('Copiar usuário do ','Copy username for ','Copiar usuario de ')+s.name)+'">'+nm(s)+' <span>'+esc(s.handle||s.copy)+' ⧉</span></button>').join(''):
-    '<div class="seal"><img src="assets/avatar.webp" alt=""></div>';
+    '<div class="seal"><img src="/assets/avatar.webp" alt="Avatar do Wirbel.mov"></div>';
 }
 $('socials').addEventListener('click',e=>{
   const b=e.target.closest('button[data-copy]');if(!b)return;
@@ -655,7 +918,7 @@ function copyMail(){
 
 /* language toggle */
 const i18n=[...document.querySelectorAll('[data-en]')];
-i18n.forEach(el=>{el.dataset.pt=el.innerHTML});
+i18n.forEach(el=>{if(!('pt' in el.dataset))el.dataset.pt=el.innerHTML});
 function setLang(l){
   lang=l;document.documentElement.lang=LOC[l];
   i18n.forEach(el=>{el.innerHTML=l==='pt'?el.dataset.pt:(el.dataset[l]||el.dataset.pt)});
@@ -664,12 +927,31 @@ function setLang(l){
   render();fitTitle();moveKnob(!knobReady);knobReady=true;
 }
 let knobReady=false;
-$('lang').addEventListener('click',e=>{const b=e.target.closest('button[data-l]');if(!b||b.dataset.l===lang)return;setLang(b.dataset.l);try{localStorage.setItem('wirbel-lang',b.dataset.l)}catch(err){}});
-document.documentElement.lang='pt-BR';
-try{const sv=localStorage.getItem('wirbel-lang');if(sv==='en'||sv==='es')lang=sv}catch(e){}
+/* each language has its own page (/, /en/, /es/) so search engines can index all three; the switch navigates */
+const LANG_URL={pt:'/',en:'/en/',es:'/es/'};
+$('lang').addEventListener('click',e=>{const b=e.target.closest('button[data-l]');if(!b||b.dataset.l===lang)return;
+  try{localStorage.setItem('wirbel-lang-choice',b.dataset.l)}catch(err){}
+  location.href=LANG_URL[b.dataset.l]+location.hash;});
+lang=({en:'en',es:'es'})[document.documentElement.lang.slice(0,2)]||'pt';
+
+/* language notice: if the browser prefers another of our languages, offer that page (never redirect automatically) */
+(function(){
+  const bar=$('langBar');if(!bar)return;
+  let pref=null;
+  for(const l of (navigator.languages||[navigator.language||''])){const k=String(l).slice(0,2).toLowerCase();if(LANG_URL[k]){pref=k;break}}
+  let chosen=null;try{chosen=localStorage.getItem('wirbel-lang-choice')}catch(e){}
+  if(!pref||pref===lang||chosen)return;
+  const TXT={pt:['Esta página está disponível em português.','Ver em português','Fechar'],
+             en:['This page is available in English.','View in English','Close'],
+             es:['Esta página está disponible en español.','Ver en español','Cerrar']}[pref];
+  bar.innerHTML='<div class="wrap"><span lang="'+pref+'">'+TXT[0]+'</span><a href="'+LANG_URL[pref]+'" lang="'+pref+'">'+TXT[1]+' →</a><button type="button" aria-label="'+TXT[2]+'">✕</button></div>';
+  bar.querySelector('a').addEventListener('click',()=>{try{localStorage.setItem('wirbel-lang-choice',pref)}catch(e){}});
+  bar.querySelector('button').addEventListener('click',()=>{bar.hidden=true;try{localStorage.setItem('wirbel-lang-choice',lang)}catch(e){}});
+  bar.hidden=false;
+})();
 
 render();
-fetch('projects.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw r;return r.json()}).then(d=>{
+fetch('/projects.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw r;return r.json()}).then(d=>{
   data={views:Number(d.views)||0,contact:d.contact||{},projects:Array.isArray(d.projects)?d.projects:[]};
 }).catch(()=>{}).finally(()=>setLang(lang));
 })();
