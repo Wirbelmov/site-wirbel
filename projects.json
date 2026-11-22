@@ -351,5 +351,14 @@
       "featured": false,
       "date": "2026-11-04"
     }
-  ]
+  ],
+  "counter": {
+    "channels": [
+      "UCoHohxs1Bg4em5BZV2mCONw"
+    ],
+    "videos": [
+      "IlMIoTLWens"
+    ],
+    "note": "channels: todos os vídeos longos (mais de 3 min) do canal entram no contador; videos: trabalhos avulsos fora do portfólio"
+  }
 }
