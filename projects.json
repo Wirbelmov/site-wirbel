@@ -1,5 +1,5 @@
 {
-  "views": 437670,
+  "views": 437831,
   "contact": {
     "email": "lucasgabriel.1312ferreiraramos@gmail.com",
     "socials": [
@@ -35,7 +35,7 @@
       "dur": "19:28",
       "url": "https://www.youtube.com/watch?v=RdMpIkEQ06I",
       "thumb": "assets/thumbs/RdMpIkEQ06I.webp",
-      "views": 27849,
+      "views": 27850,
       "facts": [
         "Gonçalo Malheiro",
         "28 mil views",
@@ -68,7 +68,7 @@
       "dur": "9:30",
       "url": "https://www.youtube.com/watch?v=X0qwdedtP48",
       "thumb": "assets/thumbs/X0qwdedtP48.webp",
-      "views": 54053,
+      "views": 54103,
       "facts": [
         "Canal Filler",
         "54 mil views",
@@ -101,7 +101,7 @@
       "dur": "11:18",
       "url": "https://www.youtube.com/watch?v=T2SBPTUeHlg",
       "thumb": "assets/thumbs/T2SBPTUeHlg.webp",
-      "views": 80746,
+      "views": 80770,
       "facts": [
         "Canal Filler",
         "81 mil views",
@@ -134,7 +134,7 @@
       "dur": "14:50",
       "url": "https://www.youtube.com/watch?v=c1QODuMIIEc",
       "thumb": "assets/thumbs/c1QODuMIIEc.webp",
-      "views": 100954,
+      "views": 100996,
       "facts": [
         "Canal Filler",
         "101 mil views",
@@ -167,7 +167,7 @@
       "dur": "12:25",
       "url": "https://www.youtube.com/watch?v=BqtHixWTPLQ",
       "thumb": "assets/thumbs/BqtHixWTPLQ.webp",
-      "views": 58126,
+      "views": 58127,
       "facts": [
         "Canal Filler",
         "58 mil views",
@@ -200,7 +200,7 @@
       "dur": "10:28",
       "url": "https://www.youtube.com/watch?v=u1Owq3SGGm8",
       "thumb": "assets/thumbs/u1Owq3SGGm8.webp",
-      "views": 41409,
+      "views": 41412,
       "facts": [
         "Canal Filler",
         "41 mil views",
@@ -233,7 +233,7 @@
       "dur": "13:28",
       "url": "https://www.youtube.com/watch?v=q8QjTZrLpI8",
       "thumb": "assets/thumbs/q8QjTZrLpI8.webp",
-      "views": 18318,
+      "views": 18320,
       "facts": [
         "Canal Filler",
         "18 mil views",
@@ -266,7 +266,7 @@
       "dur": "20:57",
       "url": "https://www.youtube.com/watch?v=qNXUO8V0gqE",
       "thumb": "assets/thumbs/qNXUO8V0gqE.webp",
-      "views": 13521,
+      "views": 13523,
       "facts": [
         "Gonçalo Malheiro",
         "14 mil views",
@@ -299,7 +299,7 @@
       "dur": "17:59",
       "url": "https://www.youtube.com/watch?v=hgTxZBowHmQ",
       "thumb": "assets/thumbs/hgTxZBowHmQ.webp",
-      "views": 12286,
+      "views": 12296,
       "facts": [
         "Gonçalo Malheiro",
         "12 mil views",
@@ -332,7 +332,7 @@
       "dur": "18:08",
       "url": "https://www.youtube.com/watch?v=XHLX5EaImAQ",
       "thumb": "assets/thumbs/XHLX5EaImAQ.webp",
-      "views": 6425,
+      "views": 6426,
       "facts": [
         "Gonçalo Malheiro",
         "6 mil views",
@@ -360,6 +360,6 @@
       "IlMIoTLWens"
     ],
     "note": "channels: todos os vídeos longos (mais de 3 min) do canal entram no contador; videos: trabalhos avulsos fora do portfólio",
-    "counted": 26
+    "counted": 27
   }
 }
